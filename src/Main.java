@@ -17,17 +17,21 @@ public class Main {
             System.out.println(i);
         }
         System.out.println("задача 5");
-        for (int i = 1904; i <= 2096; i += 4) {
-            System.out.println(i + " год является високосным");
+        for (int year = 1904; year <= 2096; year += 4) {
+            System.out.println(year + " год является високосным");
         }
         System.out.println("задача 6");
         for (int i = 7; i <= 98; i += 7) {
-            System.out.printf(i + " ");
+            System.out.print(i + " ");
         }
+        System.out.println();
+
         System.out.println("задача 7");
         for (int i = 1; i <= 512; i *= 2) {
-            System.out.printf(i + " ");
+            System.out.print(i + " ");
         }
+        System.out.println();
+
         System.out.println("задача 8");
         int contribution = 29000;
         int total = 0;
@@ -37,12 +41,17 @@ public class Main {
         }
         System.out.println("задача 9");
         contribution = 29000;
-        total = 0;
+        double totalWithInterest = 0;
         int depositInterest = 1;
         for (int i = 1; i <= 12; i++) {
-            total = total + contribution;
-            total = total + total * depositInterest / 100;
-            System.out.println("Месяц " + i + " сумма накоплений равна " + total + " рублей");
+            totalWithInterest = totalWithInterest + contribution;
+            totalWithInterest = totalWithInterest + totalWithInterest * depositInterest / 100;
+            System.out.println("Месяц " + i + " сумма накоплений равна " + totalWithInterest + " рублей");
+        }
+        System.out.println("задача 10");
+        for (int i = 1; i <= 10; i++) {
+            int table2 = 2 * i;
+            System.out.println("2*" + i + "=" + table2);
         }
 
     }
