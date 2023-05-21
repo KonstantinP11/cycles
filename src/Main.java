@@ -53,6 +53,5 @@ public class Main {
             int table2 = 2 * i;
             System.out.println("2*" + i + "=" + table2);
         }
-
     }
 }
